@@ -1,0 +1,246 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+}
+
+.container{
+    width: 360px;
+        
+    margin: 20px auto;
+
+    overflow: hidden;
+
+    
+    box-shadow: 7px 5px 29px -3px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 7px 5px 29px -3px rgba(0,0,0,0.46);
+    -moz-box-shadow: 7px 5px 29px -3px rgba(0,0,0,0.46);
+}
+
+#header-div{
+    height: 20vh;
+
+    background-color: rgb(211, 132, 211);
+
+    margin-bottom: 40px;
+
+    background-image: url("./images/background_cabecalho.jpg");
+    background-image: 100% 100%;
+}
+
+
+#information-cel-div{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    padding: 10px 12px 0;
+
+}
+.dots{
+    width: 10px;
+    height: 10px;
+
+    display: inline-block;
+
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.white-dot{
+    background-color: white;
+
+    cursor: pointer;
+}
+
+.purple-dot{
+    cursor: pointer;
+}
+
+#battery-icon{
+    width: 35px;
+    height: 30px;
+
+    margin-top: -6px;
+
+    float: right;
+}
+
+#information-cel-div span:nth-child(2){
+    text-align: center;
+}
+
+#navegation-cabecalho-div{
+    height: 5vh;
+    padding: 10px 10px;
+}
+
+#three-dots{
+    float: right;
+
+    cursor: pointer
+}
+
+#back-icon{
+    cursor: pointer;
+}
+
+#div-name{
+    height: 10vh;
+
+    display: flex;
+    align-items: flex-end;
+
+    padding: 8px 17px;
+
+    font-size: 1.5rem;
+}
+
+#list{
+    padding: 0 17px;
+}
+
+.list-tittle{
+    color: rgb(126, 126, 126);
+    font-size: 1.1;
+    font-weight: 200;
+}
+
+.list-item{
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+
+    margin: 15px 0;
+}
+
+.checkbox-div{
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    padding-bottom: 15px;
+    
+}
+
+.checkbox{
+    width: 20px;
+    height: 20px;
+
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 2px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-size: 18px;
+
+    cursor: pointer;
+}
+
+.item-content{
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+
+    border-bottom: 1px solid rgb(218, 218, 218);
+
+    height: 62px;
+
+    padding-bottom: 15px;
+}
+
+.item-content-div-separator{
+    display: grid;
+
+    grid-template-columns: 15% 85%;
+
+    align-items: center;
+}
+
+.icon-item{
+    width: 25px;
+    height: 25px;
+}
+
+.item-concluded-text--div{
+    display: flex;
+    align-items: center;
+}
+
+.item-concluded-text--div span{
+    color: gray;
+    text-decoration-line: line-through;
+}
+
+.item-text-div span:nth-child(1){
+    color: royalblue;
+    font-size: 1.1rem;
+}
+
+.item-text-div span:nth-child(2){
+    color: rgb(126, 126, 126);
+    font-size: 0.8rem;
+}
+
+
+.icon-item-div, .star-icon-div, .trash-icon-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.star-icon, .trash-icon{
+    width: 20px;
+    height: 20px;
+
+    cursor: pointer;
+}
+
+.trash-animation{
+    animation: trashAnimation 2s linear forwards;
+}
+
+
+
+
+/*trash animation*/
+@keyframes trashAnimation{
+    0%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+    50%{
+        transform: translateX(1000px);
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+#plus-button{
+    width: 70px;
+    height: 70px;
+
+    position: relative;
+    top: -30px;
+    left: 73%;
+
+    background-color: red;
+
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-weight: 700;
+    font-size: 60px;
+
+    cursor: pointer;
+}
